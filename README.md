@@ -18,5 +18,5 @@
 - luxury_car_user: True if the user took an luxury car in the first 30 days after signing up; False if not
 - weekday_pct: percentage of the trips that are taken during a weekday
 
-Train different classification models and compare the performance, get an accuracy around 80%.
+**First I did some preprocessing including imputing missing values, casting the categorical variables to 0/1 indicator or dummy variables using one-hot encoding, creating some new features based on studying the data. Then I trained different classification models and compare the performances of them, and got an accuracy around 80%.**
 ## p2p default rate prediction
