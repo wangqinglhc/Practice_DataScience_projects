@@ -28,11 +28,13 @@
   -  1.1M business attributes, e.g., hours, parking availability, ambience.
   -  Aggregated check-ins over time for each of the 125K businesses
   -  200,000 pictures from the included businesses
+  
 **Cities:**
   - U.K.: Edinburgh
   - Germany: Karlsruhe
   - Canada: Montreal and Waterloo
   - U.S.: Pittsburgh, Charlotte, Urbana-Champaign, Phoenix, Las Vegas, Madison, Cleveland
+  
 **Files:**
   - yelp_academic_dataset_business.json
   -  yelp_academic_dataset_checkin.json
@@ -40,8 +42,15 @@
   -  yelp_academic_dataset_tip.json
   -  yelp_academic_dataset_user.json
 **Notes on the Dataset**
+
   - Each file is composed of a single object type, one json-object per-line.
   - Take a look at some examples to get you started: https://github.com/Yelp/dataset-examples.
+  
+  Since I did this project on my own computer and the memory and computing power is limited, I only choose a subset of the data, which is the reviews for the restaurants in the city Las Vegas. I did mainly the following studies:
+  - Used natural language processing tools such as bag of words, stemming/lemmatization, TF-IDF to transform the review texts into vectors.
+  - Trained classifation models to classify positive (star > 4)/negative reviews using these vectors as features.
+  - Applied kmeans clustering method to cluster the reviews and looked at the top words for each cluster.
+  - Built a recommendation system to recommend restaurants to users using item-item similarity, content-based and popularity-based methods using the package graphlab.
     
     
 ## MNIST
