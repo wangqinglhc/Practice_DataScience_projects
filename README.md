@@ -41,6 +41,7 @@
   -  yelp_academic_dataset_review.json
   -  yelp_academic_dataset_tip.json
   -  yelp_academic_dataset_user.json
+  
 **Notes on the Dataset**
 
   - Each file is composed of a single object type, one json-object per-line.
