@@ -1,5 +1,5 @@
 # Practice_DataScience_projects
-## Uber users churn prediction
+## 1. Uber users churn prediction
 **Uber users churn prediction**
 **Project overview**
 - Uber is interested in predicting rider retention. To help explore this question, they have provided a sample dataset of a cohort of users who signed up in January 2014. The data was pulled several months later
@@ -20,7 +20,7 @@
 
 **First I did some preprocessing including imputing missing values, casting the categorical variables to 0/1 indicator or dummy variables using one-hot encoding, creating some new features based on studying the data. Then I trained different classification models and compare the performances of them, and got an accuracy around 80%.**
 
-## Yelp data chanllenge
+## 2. Yelp data chanllenge
 [Yelp Dataset Challenge](https://www.yelp.com/dataset_challenge)
 
 **The Challenge Dataset:**
@@ -53,7 +53,7 @@
   - Built a recommendation system to recommend restaurants to users using item-item similarity, content-based and popularity-based methods using the package graphlab.
     
     
-## MNIST
+## 3. MNIST
 The MNIST database of handwritten digits, available from this page, has a training set of 60,000 examples, and a test set of 10,000 examples. It is a subset of a larger set available from NIST. The digits have been size-normalized and centered in a fixed-size image.
 
 This is a typical multi-class classification problem. I used logistic regression, random forest, FNN and CNN for the modeling. The first two got training/tesing accuracy around 0.92, 0.95 and for the neural network they could be as high as 0.99, close to 1. For the multi-class classification problem, other than the accuracy for evaluting the model, we can plot the confusion matrix to see how the model performs for each class.
