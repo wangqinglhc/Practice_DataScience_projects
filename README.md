@@ -58,3 +58,5 @@
 The MNIST database of handwritten digits, available from this page, has a training set of 60,000 examples, and a test set of 10,000 examples. It is a subset of a larger set available from NIST. The digits have been size-normalized and centered in a fixed-size image.
 
 This is a typical multi-class classification problem. I used logistic regression, random forest, FNN and CNN for the modeling. The first two got training/tesing accuracy around 0.92, 0.95 and for the neural network they could be as high as 0.99, close to 1. For the multi-class classification problem, other than the accuracy for evaluting the model, we can plot the confusion matrix to see how the model performs for each class.
+
+## 4. Build a poem-writing machine using LSTM
