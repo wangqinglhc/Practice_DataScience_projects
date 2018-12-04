@@ -62,4 +62,10 @@ This is a typical multi-class classification problem. I used logistic regression
 ## 4. IMDB movie reviews sentiment analysis
 The dataset is implemented in the keras library. The goal is to build a model to predict if the review is positive or negative. The training and testing data each has 25000 records and are balanced for positive/negative reviews. I used several models to do this, a fead-forward neural network, a RNN with LSTM layer, and a more deeper RNN with one more LSTM layer, I also tried the bidirectional LSTM and also pre-trained embeddings. The NNs tend to be overfitting, as expected. I also tried to use regularization and dropout to reduce overfitting.
 
-## 5. Build a poem-writing machine using LSTM
+## 5. Generate Chinese poems using a seq2seq RNN model
+I used all the poems (~43000) from the Tang Dynasty of China to train a sequence to sequence RNN model. Then I used this model to generate new poems by providing a seed character. First, the model will output a character and then this output would be used as input for the next generation of character. For e.g, provided with the seed word '天', the model output a poem 
+天上月明月
+明月明月明
+月明月明月
+明月明月明
+
