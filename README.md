@@ -64,8 +64,10 @@ The dataset is implemented in the keras library. The goal is to build a model to
 
 ## 5. Generate Chinese poems using a seq2seq RNN model
 I used all the poems (~43000) from the Tang Dynasty of China to train a sequence to sequence RNN model. Then I used this model to generate new poems by providing a seed character. First, the model will output a character and then this output would be used as input for the next generation of character. For e.g, provided with the seed word '天', the model output a poem 
-天上月明月
-明月明月明
-月明月明月
-明月明月明
+'天上春风吹
+落日日暮流
+水上阳山上
+阳山上阳山'.
+Although this new poem did not make much sense, but we could see the model had learned some patterns in generating Chinese poems. If we could do more training to get a perplexity ~10 (now ~800), it would perform much better.
+
 
