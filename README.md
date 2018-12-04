@@ -51,7 +51,7 @@
   - Used natural language processing tools such as bag of words, stemming/lemmatization, TF-IDF to transform the review texts into vectors.
   - Trained classifation models to classify positive (star > 4)/negative reviews using these vectors as features.
   - Applied kmeans clustering method to cluster the reviews and looked at the top words for each cluster.
-  - Built a recommendation system to recommend restaurants to users using item-item similarity, content-based and popularity-based methods using the package GraphLab.
+  - Built a recommendation system using GraphLab to recommend restaurants to users using item-item similarity, content-based and popularity-based methods using the package GraphLab.
     
     
 ## 3. MNIST
@@ -59,4 +59,16 @@ The MNIST database of handwritten digits, available from this page, has a traini
 
 This is a typical multi-class classification problem. I used logistic regression, random forest, FNN and CNN for the modeling. The first two got training/tesing accuracy around 0.92, 0.95 and for the neural network they could be as high as 0.99, close to 1. For the multi-class classification problem, other than the accuracy for evaluting the model, we can plot the confusion matrix to see how the model performs for each class.
 
-## 4. Build a poem-writing machine using LSTM
+## 4. IMDB movie reviews sentiment analysis
+The dataset is implemented in the keras library. The goal is to build a model to predict if the review is positive or negative. The training and testing data each has 25000 records and are balanced for positive/negative reviews. I used several models to do this, a fead-forward neural network, a RNN with LSTM layer, and a more deeper RNN with one more LSTM layer, I also tried the bidirectional LSTM and also pre-trained embeddings. The NNs tend to be overfitting, as expected. I also tried to use regularization and dropout to reduce overfitting.
+
+## 5. Generate Chinese poems using a seq2seq RNN model built based on TensorFlow
+I used all the poems (~43000) from the Tang Dynasty of China to train a sequence to sequence RNN model. Then I used this model to generate new poems by providing a seed character. First, the model will output a character and then this output would be used as input for the next generation of character. For e.g, provided with the seed word '天', the model output a poem 
+'天上春风吹
+落日日暮流
+水上阳山上
+阳山上阳山'.
+Although this new poem did not make much sense, but we could see the model had learned some patterns in generating Chinese poems. If we could do more training to get a perplexity ~10 (now ~800), it would perform much better.
+![image]
+
+
