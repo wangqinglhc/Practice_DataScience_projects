@@ -51,7 +51,7 @@
   - Used natural language processing tools such as bag of words, stemming/lemmatization, TF-IDF to transform the review texts into vectors.
   - Trained classifation models to classify positive (star > 4)/negative reviews using these vectors as features.
   - Applied kmeans clustering method to cluster the reviews and looked at the top words for each cluster.
-  - Built a recommendation system to recommend restaurants to users using item-item similarity, content-based and popularity-based methods using the package GraphLab.
+  - Built a recommendation system using GraphLab to recommend restaurants to users using item-item similarity, content-based and popularity-based methods using the package GraphLab.
     
     
 ## 3. MNIST
