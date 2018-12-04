@@ -62,8 +62,8 @@
 The MNIST database of handwritten digits, available from this page, has a training set of 60,000 examples, and a test set of 10,000 examples. It is a subset of a larger set available from NIST. The digits have been size-normalized and centered in a fixed-size image.
 
 This is a typical multi-class classification problem. I used logistic regression, random forest, FNN and CNN for the modeling. The first two got training/tesing accuracy around 0.92, 0.95 and for the neural network they could be as high as 0.99, close to 1. For the multi-class classification problem, other than the accuracy for evaluting the model, we can plot the confusion matrix to see how the model performs for each class.
-![image](Uber_churn_prediction/numbers.png)
-![image](Uber_churn_prediction/cm.png)
+![image](MNIST/numbers.png)
+![image](MNIST/cm.png)
 
 ## 4. IMDB movie reviews sentiment analysis
 The dataset is implemented in the keras library. The goal is to build a model to predict if the review is positive or negative. The training and testing data each has 25000 records and are balanced for positive/negative reviews. I used several models to do this, a fead-forward neural network, a RNN with LSTM layer, and a more deeper RNN with one more LSTM layer, I also tried the bidirectional LSTM and also pre-trained embeddings. The NNs tend to be overfitting, as expected. I also tried to use regularization and dropout to reduce overfitting.
