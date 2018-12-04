@@ -19,6 +19,7 @@
 - weekday_pct: percentage of the trips that are taken during a weekday
 
 **First I did some preprocessing including imputing missing values, casting the categorical variables to 0/1 indicator or dummy variables using one-hot encoding, creating some new features based on studying the data. Then I trained different classification models and compare the performances of them, and got an accuracy around 80%.**
+![image](Uber_churn_prediction/metrics.PNG)
 
 ## 2. Yelp data chanllenge
 [Yelp Dataset Challenge](https://www.yelp.com/dataset_challenge)
@@ -69,6 +70,5 @@ I used all the poems (~43000) from the Tang Dynasty of China to train a sequence
 水上阳山上
 阳山上阳山'.
 Although this new poem did not make much sense, but we could see the model had learned some patterns in generating Chinese poems. If we could do more training to get a perplexity ~10 (now ~800), it would perform much better.
-![image]
 
 
