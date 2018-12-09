@@ -70,7 +70,7 @@ The dataset is implemented in the keras library. The goal is to build a model to
 ![image](IMDB_review_sentiment_analysis/LSTM.PNG)
 
 ## 5. Generate Chinese poems using a seq2seq RNN model built based on TensorFlow
-![image](Gnerate_Chinese_poems/seq2seq.PNG)
+![image](Generate_Chinese_poems/seq2seq.PNG)
 I used all the poems (~43000) from the Tang Dynasty of China to train a sequence to sequence RNN model. Then I used this model to generate new poems by providing a seed character. First, the model will output a character and then this output would be used as input for the next generation of character. For e.g, provided with the seed word '天', the model output a poem </br>
 **'天上春风吹</br>
 落日日暮流</br>
