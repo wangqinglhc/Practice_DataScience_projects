@@ -78,4 +78,8 @@ I used all the poems (~43000) from the Tang Dynasty of China to train a sequence
 阳山上阳山'.**</br>
 Although this new poem did not make much sense, but we could see the model had learned some patterns in generating Chinese poems. If we could do more training to get a perplexity ~10 (now ~800), it would perform much better.
 
+## 6. XXX take home chanllenge Q4, churn prediction.
+- Usually, a user is considered to churn if they do not have activities (balance below 10 in Robinhood account) in the last X days. Here we can get the last date for balance above 10 for each user using 'groupby(['user_id']).max()' and see if it is earlier than (timestamp.max() - 28) days.
+- However, the definition here, 'A user is considered churned when their equity value (amount of money in Robinhood account) falls below 10 for a period of 28 consecutive calendar days or longer', is a little tricky. Therefore I also used a tricky way to get the churn lables.
+- Another highlight of this project is that I tried the SMOTE algorthm in order to get a balanced dataset. The result looks pretty good.
 
